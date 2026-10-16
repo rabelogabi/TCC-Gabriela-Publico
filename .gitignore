@@ -1,0 +1,56 @@
+# LOGS
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# DEPENDÊNCIAS
+
+node_modules/
+
+# ARQUIVOS GERADOS
+
+dist/
+dist-ssr/
+build/
+coverage/
+*.local
+
+# CREDENCIAIS E VARIÁVEIS DE AMBIENTE
+.env
+.env.*
+!.env.example
+
+# Chaves e certificados privados
+*.pem
+*.key
+*.p12
+*.pfx
+
+# BANCO DE DADOS E BACKUPS
+
+*.dump
+*.backup
+*.sqlite
+*.sqlite3
+*.db
+*.dbc
+*.dbf
+
+# EDITORES E SISTEMA OPERACIONAL
+
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+Thumbs.db

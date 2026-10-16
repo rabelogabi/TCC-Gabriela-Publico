@@ -1,0 +1,386 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #0f2a44;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #0f2a44;
+  font-size: 14px;
+}
+
+
+.btn-primary {
+  background-color: #1b7f5a;
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-secondary {
+  background-color: #e5e5e5;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.home {
+  padding: 90px 0 60px;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 38px;
+  max-width: 860px;
+  margin: 0 auto 20px;
+}
+
+.home p {
+  max-width: 720px;
+  margin: 0 auto 36px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4a5d73;
+}
+
+
+.home .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  padding: 28px 22px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #5c6f84;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #0F2A44;
+}
+
+.menu-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-login {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f1f1f1;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #0F2A44;
+  font-size: 14px;
+}
+
+
+
+.botao-tema {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px;
+
+  color: #092d4d;
+
+  transition: 0.2s;
+}
+
+.botao-tema:hover {
+  transform: rotate(15deg);
+}
+
+
+/* =========================
+   MODO NOTURNO
+========================= */
+
+body.modo-noturno {
+  background: #111827;
+  color: #f1f5f9;
+}
+
+
+
+body.modo-noturno header {
+  background: #111827;
+  border-bottom-color: #263244;
+}
+
+body.modo-noturno header a {
+  color: #f1f5f9;
+}
+
+body.modo-noturno .botao-tema {
+  color: #facc15;
+}
+
+
+
+
+body.modo-noturno .sobre,
+body.modo-noturno .dashboard,
+body.modo-noturno main {
+  background: #111827;
+  color: #f1f5f9;
+}
+
+
+
+
+body.modo-noturno h1,
+body.modo-noturno h2,
+body.modo-noturno h3 {
+  color: #f1f5f9;
+}
+
+
+
+
+body.modo-noturno p {
+  color: #cbd5e1;
+}
+
+
+
+
+body.modo-noturno .projeto-card,
+body.modo-noturno .funcionalidade-card,
+body.modo-noturno .tecnologias {
+  background: #1f2937;
+}
+
+
+
+
+body.modo-noturno .projeto-card strong,
+body.modo-noturno .funcionalidade-card h3,
+body.modo-noturno .tecnologias strong {
+  color: #f1f5f9;
+}
+
+
+
+body.modo-noturno .funcionalidade-card p,
+body.modo-noturno .tecnologia p {
+  color: #cbd5e1;
+}
+
+
+
+
+body.modo-noturno .impacto-grid p {
+  color: #cbd5e1;
+}
+/* =========================
+   BOTÃO MODO NOTURNO
+========================= */
+
+.botao-tema {
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 7px;
+
+  color: #092d4d;
+
+  transition: 0.2s;
+}
+
+.botao-tema:hover {
+  transform: rotate(15deg);
+}
+
+
+/* =========================
+   BOTÃO SAIR
+========================= */
+
+.btn-sair {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  border: none;
+  background: transparent;
+
+  color: #092d4d;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  padding: 8px 10px;
+
+  transition: 0.2s;
+}
+
+.btn-sair:hover {
+  color: #d64545;
+}
+
+
+/* =========================
+   MODO NOTURNO
+========================= */
+
+body.modo-noturno {
+  background: #111827;
+  color: #f1f5f9;
+}
+
+
+/* HEADER */
+
+body.modo-noturno header {
+  background: #111827;
+  border-bottom-color: #263244;
+}
+
+body.modo-noturno header a {
+  color: #f1f5f9;
+}
+
+body.modo-noturno .botao-tema {
+  color: #facc15;
+}
+
+body.modo-noturno .btn-sair {
+  color: #f1f5f9;
+}
+
+body.modo-noturno .btn-sair:hover {
+  color: #ff6b6b;
+}
+
+
+/* CONTEÚDO */
+
+body.modo-noturno .sobre,
+body.modo-noturno .dashboard,
+body.modo-noturno main {
+  background: #111827;
+  color: #f1f5f9;
+}
+
+
+/* TÍTULOS */
+
+body.modo-noturno h1,
+body.modo-noturno h2,
+body.modo-noturno h3 {
+  color: #f1f5f9;
+}
+
+
+/* PARÁGRAFOS */
+
+body.modo-noturno p {
+  color: #cbd5e1;
+}
+
+
+/* CARDS */
+
+body.modo-noturno .projeto-card,
+body.modo-noturno .funcionalidade-card,
+body.modo-noturno .tecnologias {
+  background: #1f2937;
+}
+
+
+/* TEXTOS DOS CARDS */
+
+body.modo-noturno .projeto-card strong,
+body.modo-noturno .funcionalidade-card h3,
+body.modo-noturno .tecnologias strong {
+  color: #f1f5f9;
+}
+
+
+/* TEXTOS DAS FUNCIONALIDADES */
+
+body.modo-noturno .funcionalidade-card p,
+body.modo-noturno .tecnologia p {
+  color: #cbd5e1;
+}
+
+
+/* IMPACTO */
+
+body.modo-noturno .impacto-grid p {
+  color: #cbd5e1;
+}

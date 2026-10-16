@@ -1,0 +1,465 @@
+
+/* CONFIGURAÇÃO GERAL */
+
+.sobre {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #092d4d;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+/* INTRODUÇÃO */
+
+.sobre-intro {
+  text-align: center;
+  padding: 40px 20px 30px;
+}
+
+.sobre-intro h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #092d4d;
+}
+
+.sobre-intro p {
+  max-width: 850px;
+  margin: 14px auto 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+/* SOBRE O PROJETO */
+
+.projeto-card {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 45px;
+  padding: 28px 32px;
+  background: #eeeeee;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.projeto-card h2 {
+  margin: 0 0 6px;
+  font-size: 22px;
+  color: #092d4d;
+}
+
+.curso {
+  margin: 0 0 22px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.dados-projeto {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 40px;
+}
+
+.dados-projeto strong,
+.objetivo strong {
+  display: block;
+  font-size: 13px;
+  color: #092d4d;
+}
+
+.dados-projeto p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.objetivo {
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px solid #d4d4d4;
+}
+
+.objetivo p {
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #334155;
+}
+
+/* FUNCIONALIDADES PRINCIPAIS */
+
+.funcionalidades {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 45px;
+  box-sizing: border-box;
+}
+
+.funcionalidades h2 {
+  text-align: center;
+  margin: 0 0 28px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #092d4d;
+}
+
+.funcionalidades-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.funcionalidade-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+  height: 100%;
+  padding: 24px;
+  background: #eeeeee;
+  border-radius: 14px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.funcionalidade-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.funcionalidade-card svg {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  stroke-width: 2.2;
+}
+
+.funcionalidade-card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #092d4d;
+}
+
+.funcionalidade-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+/* CORES DOS ÍCONES */
+
+.icone-dados {
+  color: #159570;
+}
+
+.icone-mapa {
+  color: #e0b51a;
+}
+
+.icone-estatistica {
+  color: #e8892d;
+}
+
+.icone-clima {
+  color: #20a6a0;
+}
+
+.icone-consulta {
+  color: #3867d6;
+}
+
+.icone-usuarios {
+  color: #8e44ad;
+}
+
+.icone-seguranca {
+  color: #e74c3c;
+}
+
+.icone-tempo {
+  color: #2f80ed;
+}
+
+/* TECNOLOGIAS UTILIZADAS */
+
+.tecnologias {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 28px 32px;
+  background: #eeeeee;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+
+.tecnologias h2 {
+  margin: 0 0 24px;
+  font-size: 22px;
+  color: #092d4d;
+}
+
+.tecnologias-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.tecnologia {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.tecnologia svg {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  color: #1b7f5a;
+  stroke-width: 2.2;
+}
+
+.tecnologia strong {
+  font-size: 14px;
+  color: #092d4d;
+}
+
+.tecnologia p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #334155;
+}
+
+/* IMPACTO ESPERADO */
+
+.impacto {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.impacto h2 {
+  margin: 0 0 24px;
+  font-size: 22px;
+  color: #092d4d;
+}
+
+.impacto-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 40px;
+}
+
+.impacto-grid > div {
+  min-width: 0;
+}
+
+.impacto-grid h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #1b7f5a;
+}
+
+.impacto-grid h3 svg {
+  flex-shrink: 0;
+  color: #1b7f5a;
+}
+
+.impacto-grid p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #334155;
+}
+
+/* RODAPÉ */
+
+.sobre-footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 0 20px;
+  color: #777777;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.sobre-footer p {
+  margin: 5px 0;
+}
+
+/* RESPONSIVIDADE - TABLETS */
+
+@media (max-width: 900px) {
+  .funcionalidades-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tecnologias-grid {
+    gap: 20px;
+  }
+
+  .sobre-intro h1 {
+    font-size: 28px;
+  }
+}
+
+/* RESPONSIVIDADE - CELULARES */
+
+@media (max-width: 600px) {
+  .sobre-intro {
+    padding: 25px 16px;
+  }
+
+  .sobre-intro h1 {
+    font-size: 23px;
+  }
+
+  .sobre-intro p {
+    font-size: 13px;
+  }
+
+  .projeto-card,
+  .funcionalidades,
+  .tecnologias,
+  .impacto {
+    width: 92%;
+  }
+
+  .projeto-card,
+  .tecnologias {
+    padding: 22px 18px;
+  }
+
+  .dados-projeto {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .funcionalidades h2 {
+    font-size: 23px;
+  }
+
+  .funcionalidades-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .funcionalidade-card {
+    padding: 22px;
+  }
+
+  .tecnologias-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .impacto-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* CORREÇÃO DA SEÇÃO TECNOLOGIAS UTILIZADAS */
+
+.sobre .tecnologias {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 28px 32px;
+  box-sizing: border-box;
+  background: #eeeeee;
+  border-radius: 14px;
+}
+
+.sobre .tecnologias h2 {
+  display: block;
+  width: 100%;
+  margin: 0 0 24px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+  color: #092d4d;
+}
+
+.sobre .tecnologias-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.sobre .tecnologia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.sobre .tecnologia svg {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  color: #1b7f5a;
+}
+
+.sobre .tecnologia > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.sobre .tecnologia strong {
+  display: block;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #092d4d;
+}
+
+.sobre .tecnologia p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #334155;
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+  .sobre .tecnologias-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+  .sobre .tecnologias {
+    padding: 22px 18px;
+  }
+
+  .sobre .tecnologias-grid {
+    grid-template-columns: 1fr;
+  }
+}
